@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className='items-center h-screen w-screen'>
+    <div className='items-center h-screen w-screen max-h-screen'>
       <Header />
       <RouterProvider router={router} />
       <Footer />

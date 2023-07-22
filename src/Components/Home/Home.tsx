@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const Home = () => {
   const [isOpen] = useState(false);
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row wrapper">
       <NavMenu isOpen={isOpen} Menu={Menu} />
       <div className="w-full flex flex-col overflow-auto">
         <div className="flex gap-8 sm:gap-2 flex-col">
