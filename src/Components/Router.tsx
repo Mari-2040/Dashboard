@@ -7,11 +7,12 @@ import Calculator from"../Components/Calculator/Calculator"
 import Report from "../Components/Report/Report"
 import AtherPage from "../Components/AtherPage/AtherPage";
 import Launchpad from "../Components/Launchpad/Launchpad";
+import Wrapper from "../Components/Wrapper/Wrapper";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path=''element={<Home />}>
+    <Route path=''element={<Wrapper />}>
       <Route index path='/Launchpad'element={<Launchpad/>}/>
       <Route path='Analyze' element = {<Analyze/>}/>
       <Route path='Carbon' element= {<Carbon/>}/>

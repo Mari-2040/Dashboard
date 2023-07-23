@@ -9,5 +9,7 @@
 }
 
 .wrapper {
-    min-height: calc(100vh - 141px);
+    min-height: calc(100vh - 114px);
+    background: #073263;
+    background: linear-gradient(180deg, #073263, 70%, #466E9B);
 }
