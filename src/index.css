@@ -13,3 +13,9 @@
     background: #073263;
     background: linear-gradient(180deg, #073263, 70%, #466E9B);
 }
+
+.animate-gradient {
+    animation: rotateGradient 10s linear infinite;
+    background: linear-gradient(45deg, #f00, #00f, #0f0, #f00);
+    background-size: 400% 400%;
+  }
