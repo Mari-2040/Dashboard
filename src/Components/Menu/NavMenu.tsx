@@ -4,7 +4,7 @@ const NavMenu = ({ isOpen, Menu }) => {
   const navigate = useNavigate();
 
   return (
-  <div className={`mt-3 ml-4 opacity-[0.75]`}>
+  <div className={`mt-3 ml-4 opacity-[0.75] h-full`}>
     {Menu.map((item: any, index: any) => {
     return (
       <div>

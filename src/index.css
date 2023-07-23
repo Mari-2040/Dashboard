@@ -11,3 +11,8 @@
 .wrapper {
     min-height: calc(100vh - 141px);
 }
+.animate-gradient {
+    animation: rotateGradient 10s linear infinite;
+    background: linear-gradient(45deg, #f00, #00f, #0f0, #f00);
+    background-size: 400% 400%;
+  }
