@@ -2,20 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 .wrapper {
-    min-height: calc(100vh - 114px);
-    background: #073263;
-    background: linear-gradient(180deg, #073263, 70%, #466E9B);
+  min-height: calc(100vh - 114px);
+  background: #073263;
+  background: linear-gradient(180deg, #073263, 70%, #466e9b);
+}
+.animate-gradient {
+  animation: rotateGradient 10s linear infinite;
+  background: linear-gradient(45deg, #ff5252, #33d9b2, #ffb142, #6ab04c);
+  background-size: 400% 400%;
+}
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animate-gradient2 {
+  animation: rotateGradient2 10s linear infinite;
+  background: linear-gradient(45deg, #cbfde7, #e5c48e, #169c7f, #4cb079);
+  background-size: 400% 400%;
+}
+@keyframes rotateGradient2 {
+  0% {
+    background-position: 5% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 5% 50%;
+  }
+}
+.animate-gradient3 {
+  animation: rotateGradient2 10s linear infinite;
+  background: linear-gradient(45deg, #ff6b6b, #f8b195, #8ab6d6, #ffcc5c);
+  background-size: 400% 400%;
+}
+@keyframes rotateGradient2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.animate-gradient {
-    animation: rotateGradient 10s linear infinite;
-    background: linear-gradient(45deg, #f00, #00f, #0f0, #f00);
-    background-size: 400% 400%;
-  }
+.border {
+   border: 1px solid rgb(135, 134, 134);
+   border-collapse: collapse;
+}
