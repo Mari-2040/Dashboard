@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "../Components/Home/Home";
-import { BrowserRouter as Router, Route, createBrowserRouter, createRoutesFromElements,} from "react-router-dom";
+import { BrowserRouter as Router, Route, createBrowserRouter, createRoutesFromElements, Navigate} from "react-router-dom";
 import Analyze from  "../Components/Analyze/Analyze"
 import Carbon from "../Components/Carbon/Carbon"
 import Calculator from"../Components/Calculator/Calculator"
@@ -12,7 +12,8 @@ import Wrapper from "../Components/Wrapper/Wrapper";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path=''element={<Wrapper />}>
+    <Route path='' element={<Wrapper />}>
+      <Route index element={ <Navigate to="/Launchpad" /> }/>
       <Route index path='/Launchpad'element={<Launchpad/>}/>
       <Route path='Analyze' element = {<Analyze/>}/>
       <Route path='Carbon' element= {<Carbon/>}/>
