@@ -3,7 +3,6 @@ import Chart  from 'react-apexcharts'
 
 const RadialChart = () => {
     const state : any = {
-          
         series: [44, 55, 67, 83],
         options: {
           chart: {
