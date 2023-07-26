@@ -1,6 +1,7 @@
 import React from "react";
 import CarbQuesageTable from "./CarbQuesageTable";
 import CarbonText from "./CarbonText"
+import CarbQuesInput from "./CarbQuesInput";
 const CarbQuesage = ({isDropdownOpen}) => {
   return (
     <div className="px-24 py-5">
@@ -10,6 +11,7 @@ const CarbQuesage = ({isDropdownOpen}) => {
       </div>
       <CarbonText/>
       <CarbQuesageTable />
+      <CarbQuesInput/>
     </div>
   );
 };

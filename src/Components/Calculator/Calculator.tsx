@@ -44,8 +44,7 @@ const Calculator = () => {
         <div className='grid grid-cols-4 gap-2 '>
           {[7, 8, 9, "*", 4, 5, 6, "-", 1, 2, 3, "+", 0, ",", "=", "/"].map(
             (value) => (
-              <button
-                key={value}
+              <button key={value}
                 className='bg-pink-300 rounded-lg p-3 text-xl text-white focus:outline-none'
                 onClick={() => handleButtonClick(value)}
               >

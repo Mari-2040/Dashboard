@@ -1,5 +1,5 @@
 import React from "react";
-// import CarbonPage from "./CarbonPage";
+import CarbonPage from "./CarbonPage";
 import CarbQuesage from "./CarbQuesage";
 
 const Carbon = () => {
@@ -11,7 +11,7 @@ const Carbon = () => {
         <div>History</div>
       </div>
       {/* <CarbonPage /> */}
-      <CarbQuesage/>
+      <CarbQuesage isDropdownOpen={undefined}/>
     </div>
   );
 };
