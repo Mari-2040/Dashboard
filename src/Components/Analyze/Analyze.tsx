@@ -31,10 +31,9 @@ const Analyze = () => {
       <nav className='bg-blue-300 p-4'>
         <div className='container mx-auto flex space-x-4'>
           {sections.map((section) => (
-            <button key={section.id}
-              onClick={() => handleSectionChange(section.id)}
+            <button key={section.id} onClick={() => handleSectionChange(section.id)}
               className={`text-black font-normal px-3 py-2 rounded ${
-                activeSection === section.id ? "bg-red-300" : ""
+                activeSection === section.id ? "bg-pink-100 animate-bounce" : "font-medium"
               }`}
             >
               {section.title}

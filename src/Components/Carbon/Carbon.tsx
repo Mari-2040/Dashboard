@@ -1,20 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import CarbonPage from "./CarbonPage";
 import CarbQuesage from "./CarbQuesage";
-import Question from "./Question";
+import History from "./History";
 
 const Carbon = () => {
+  const [activeSection, setActiveSection] = useState("ESG");
+
+  const handleSectionChange = (id) => {setActiveSection(id) };
+
+  const sections = [
+    { title: "ESG Score", id: "ESG" },
+    { title: "Questionnaire", id: "Questionnaire" },
+    { title: "History", id: "History" },
+  ];
+
+  const renderSection = () => {
+    switch (activeSection) {
+      case "ESG":
+        return <CarbonPage />;
+      case "Questionnaire":
+        return <CarbQuesage isDropdownOpen={undefined} />;
+      case "History":
+        return <History />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div>
-      <div className='flex gap-20 p-6 text-black font-normal w-full font-sans leading-normal bg-[#F1F1F2] rounded-t-lg'>
-        <div>ESG Score</div>
-        <div>Questionnaire</div>
-        <div>History</div>
+      <div className="flex text-black font-normal bg-[#F1F1F2] container space-x-10">
+        {sections.map((section) => (
+          <button key={section.id} onClick={() => handleSectionChange(section.id)}
+            className={`text-black px-7 rounded ${
+              activeSection === section.id ? "py-4 px-8 bg-white font-bold text-[#2E64C5] " : ""
+            }`}
+          >
+            {section.title}
+          </button>
+        ))}
       </div>
+
       <div>
-        <CarbonPage />
-        {/* <CarbQuesage isDropdownOpen={undefined}/> */}
-        {/* <Question/> */}
+        {renderSection()}
       </div>
     </div>
   );
