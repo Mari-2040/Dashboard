@@ -104,7 +104,7 @@ const Question = () => {
       <div className='p-4 '>
         <h1 className='text-2xl font-bold mb-4'>Question 6:</h1>
         <p className='text-lg mb-4'> For Fiscal year 2021, what was your total GhG Carbon Emission for all scopes? </p>
-        <div className='space-y-4'>
+        <div className='space-y-4 '>
           {options2.map((option2) => (
             <div key={option2} className='flex items-center space-x-2'>
               <input type='radio' id={option2} value={option2} checked={selectedOption === option2}

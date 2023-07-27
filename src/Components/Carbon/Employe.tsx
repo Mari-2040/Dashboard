@@ -20,10 +20,10 @@ const Employe = () => {
 
   return (
     <div>
-      <div className='max-h-80 max-w-md overflow-y-auto p-4 mt-4'>
-        <ul className='space-y-4'>
+      <div className='max-h-80 max-w-md overflow-y-auto p-4 mt-4 '>
+        <ul className='space-y-4 '>
           {questions.map((question, index) => (
-            <li key={index} className='text-lg font-medium'>
+            <li key={index} className='text-lg font-medium text-black hover:text-emerald-500 cursor-pointer'>
               {index + 1}. {question}
             </li>
           ))}

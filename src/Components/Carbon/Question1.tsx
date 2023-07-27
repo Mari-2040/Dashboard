@@ -20,11 +20,11 @@ const Question1 = () => {
         </div>
         <div className='space-y-4 mt-5'>
           {options.map((option) => (
-            <div key={option} className='flex items-center space-x-2'>
+            <div key={option} className='flex items-center space-x-2 cursor-pointer'>
               <input type='radio' id={option} value={option}
                 checked={selectedOption === option}
                 onChange={() => handleOptionChange(option)}
-                className='form-radio text-blue-500 h-4 w-4'
+                className='form-radio text-blue-500 h-4 w-4 '
               />
               <label htmlFor={option} className='text-lg'> {option}</label>
             </div>
