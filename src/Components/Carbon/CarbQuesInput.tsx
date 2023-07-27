@@ -1,9 +1,9 @@
 import React from "react";
 
-const CarbQuesInput = () => {
+const CarbQuesInput = ({onClick ,handleToggleEsg}) => {
   return (
     <div className='flex flex-col gap-2.5 items-center mt-10'>
-      <button className='focus:outline-none bg-[#0F66CC] rounded-lg p-4 text-sm text-white'>
+      <button className='focus:outline-none bg-[#0F66CC] rounded-lg p-4 text-sm text-white' onClick ={handleToggleEsg}>
         Get Started
       </button>
       <button className='focus:outline-none bg-[#CCC] rounded-lg p-4 text-sm text-white'>

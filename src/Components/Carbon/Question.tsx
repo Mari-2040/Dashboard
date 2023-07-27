@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const Question = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
-
-
   const options = [
     "Scope 1 - Determine environmental impact levels.",
     "Scope 2 - Reduce carbon footprints.",

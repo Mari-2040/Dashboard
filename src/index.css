@@ -276,10 +276,27 @@
   font-weight: 700;
   line-height: normal;
 }
-.text-size2{
+.text-size2 {
   color: #101011;
   font-size: 20px;
   font-style: medium;
   font-weight: 600;
   line-height: normal;
+}
+
+.content {
+  color: #0f66cc;
+  font-size: 17px;
+  font-style: medium;
+  font-weight: 700;
+  line-height: normal;
+}
+
+ .fisc{
+  color: #101011;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
 }

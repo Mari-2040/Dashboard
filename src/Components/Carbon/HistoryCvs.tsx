@@ -4,9 +4,7 @@ import Question from "./Question";
 const HistoryCvs = () => {
   const [selectedSocial, setSelectedSocial] = useState("Social");
   const options = ["Social", "Faceboock", "Instagram", "Youtube"];
-  const handleSocial = (event) => {
-    setSelectedSocial(event.target.value);
-  };
+  const handleSocial = (event) => { setSelectedSocial(event.target.value)};
 
   return (
     <div>

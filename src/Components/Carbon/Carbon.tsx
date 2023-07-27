@@ -19,7 +19,7 @@ const Carbon = () => {
       case "ESG":
         return <CarbonPage />;
       case "Questionnaire":
-        return <CarbQuesage isDropdownOpen={undefined} />;
+        return <CarbQuesage/>;
       case "History":
         return <History />;
       default:
