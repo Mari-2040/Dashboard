@@ -9,7 +9,7 @@ import RadarChart from "../Charts/RadarChart";
 
 const Launchpad = () => {
   return (
-    <div className='ml-5 mt-5 grid grid-cols-3 justify-items-center items-center'>
+    <div className='px-1 mt-5 grid grid-cols-3 justify-items-center items-center'>
       <div className="min-w-full">
         <ColChart />
       </div>
