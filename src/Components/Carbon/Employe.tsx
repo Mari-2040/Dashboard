@@ -10,11 +10,6 @@ const Employe = () => {
     "Donec accumsan odio eget aliquam?",
     "Is there a senior code of ethics?",
     "What are the employee satisfaction?",
-    "Senior code of ethics?",
-    "Maximus neque malesuada sapien sollicitudin, eu.",
-    "Donec odio eget aliquam.",
-    "Nullam eget magna?",
-    "Donec eget aliquam?",
     "Is there a code of ethics?",
   ];
 
