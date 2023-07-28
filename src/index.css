@@ -292,7 +292,7 @@
   line-height: normal;
 }
 
- .fisc{
+.fisc {
   color: #101011;
   font-size: 16px;
   font-style: normal;
@@ -300,3 +300,71 @@
   line-height: normal;
   margin-top: 10px;
 }
+
+.css-prop-demo {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+}
+.css-prop-demo .el {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #ff5733; /* Set your desired background color */
+  border-radius: 50%;
+  transform: translate(-40%, -40%);
+  animation-name: animeAnimation;
+  animation-duration: 2s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out; /* You can try different easing functions here */
+}
+@keyframes animeAnimation {
+  0% {
+    left: 50%;
+    border-radius: 50%;
+  }
+  100% {
+    left: 240px;
+    border-radius: 50%;
+  }
+}
+
+
+/* Styles for the container element */
+.specific-prop-params-demo {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styles for the element to be animated */
+.specific-prop-params-demo .eli {
+  width: 50px;
+  height: 50px;
+  background-color: #FF5733; /* Set your desired background color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animationSequence 6.6s ease-in-out infinite alternate;
+}
+
+/* Define the keyframes for the animation */
+@keyframes animationSequence {
+  0% {
+    transform: translateX(0) rotate(0) scale(0);
+  }
+  33% {
+    transform: translateX(250px) rotate(120deg) scale(1);
+  }
+  66% {
+    transform: translateX(250px) rotate(240deg) scale(2);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg) scale(1);
+  }
+}
+

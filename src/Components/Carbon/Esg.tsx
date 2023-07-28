@@ -11,7 +11,7 @@ const Esg = () => {
     <div>
       <div className='flex justify-between px-6 py-6 border-b-2'>
         <div className='text-size2'>
-          Take the questionnaire to determine your ESG Score{" "}
+          Take the questionnaire to determine your ESG Score
         </div>
         <div>
           <select id='selectOption' value={selectedSocial}
