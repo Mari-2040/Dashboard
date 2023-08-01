@@ -9,20 +9,20 @@ import RadarChart from "../Charts/RadarChart";
 
 const Launchpad = () => {
   return (
-    <div className='px-1 mt-5 grid grid-cols-3 justify-items-center items-center'>
-      <div className="min-w-full">
+    <div className='px-1 mt-5 grid grid-cols-2 justify-items-center items-center overflow-x-hidden'>
+      <div className="min-w-[80%]">
         <ColChart />
       </div>
-      <div className="min-w-full">
+      <div className="min-w-[80%]">
         <MixedChart />
       </div>
-      <div className="min-w-full">
+      <div className="min-w-[80%]">
         <CandleChart />
       </div>
-      <div className="min-w-full">
+      <div className="min-w-[80%]">
         <PieChart />
       </div>
-      <div className="min-w-full">
+      <div className="min-w-[80%]">
         <RadialChart />
       </div>
       <div className="min-w-full">
