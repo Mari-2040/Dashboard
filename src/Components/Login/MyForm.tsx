@@ -40,6 +40,7 @@ export default function MyForm() {
     yourDataCorrect: false,
   });
   const FormTitle = ["SingUp", "PersonalInfo", "Confirm"];
+
   const formDisplay = () => {
     if (page === 0) {
       return (
@@ -66,28 +67,21 @@ export default function MyForm() {
   };
 
   return (
-    <div
-      style={{ width: "500px" }}
-      className='m-auto shadow rounded p-5 bg-white'
-    >
-      <ProgressBar className=" rounded-lg bg-blue-800 p-1 text-white" 
-         now={FormTitle.length - 1 === page ? 100 : (page + 1) * 33}
-         label={`${FormTitle.length - 1 === page ? 100 : (page + 1) * 33}%`}
-      />
-
+    <div style={{ width: "500px" }} className='m-auto shadow rounded p-6 bg-white '>
+       <a href="#" className="flex justify-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <img className="w-52 bg-cover h-auto mr-2" src="./logo.svg" alt="logo" /> 
+      </a>
+      <h1 className="flex text-xl justify-center font-bold leading-tight tracking-tight text-white md:text-2xl dark:text-white"> Sign in to your account</h1>
       <h3 className=" justify-center flex mt-10 text-2xl text-red-500 font-medium">{FormTitle[page]}</h3>
       {formDisplay()}
       <div className='flex'>
-        <button
-          disabled={page === 0}
-          className='mx-3 ml-24 flex bg-red-500 p-1 rounded text-white px-10'
-          onClick={() => setPge((currPage) => currPage - 1)}
+        <button disabled={page === 0} className='mx-3 ml-24 flex bg-red-500 p-1 rounded text-white px-10'
+           onClick={() => setPge((currPage) => currPage - 1)}
         >
           Prev
         </button>
-        <button
-          disabled={!formData.yourDataCorrect && FormTitle.length - 1 === page}
-          className='ml-5 flex bg-blue-500 p-1 rounded text-white px-10'
+        <button disabled={!formData.yourDataCorrect && FormTitle.length - 1 === page}
+          className='ml-5 flex bg-blue-500 p-1 rounded px-10'
           onClick={() => {
             if (page === FormTitle.length - 1) {
               alert("mari");

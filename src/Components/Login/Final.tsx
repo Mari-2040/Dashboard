@@ -9,9 +9,7 @@ export default function Final({ formData, setFormData }: FromDataProps) {
         <Form.Label>Is all the data taht you have entered correct ?</Form.Label>
         <Form.Check
           onChange={(e) => setFormData({ ...formData, yourDataCorrect: !formData.yourDataCorrect})}
-          checked={formData.yourDataCorrect}
-          type="checkbox"
-          key="yourDataCorrect"
+          checked={formData.yourDataCorrect} type="checkbox" key="yourDataCorrect"
         />
       </Form.Group>
     </Form>
