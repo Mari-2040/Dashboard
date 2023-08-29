@@ -6,9 +6,7 @@ import Esg from "./Esg";
 
 const CarbQuesage = () => {
   const [showEsg, setShowEsg] = useState(true);
-  const handleToggleEsg = () => {
-    setShowEsg((prevEsg) => !prevEsg);
-  };
+  const handleToggleEsg = () => {setShowEsg((prevEsg) => !prevEsg);};
 
   return (
     <div>
